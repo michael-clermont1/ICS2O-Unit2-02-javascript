@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style>
+      body {
+  background-color: blue;
+}
+    </style>
+  </head>
+  <body>
+    <button onclick="document.getElementById('firstimage').src='./images/OIP3LJTRCJ0.jpg'">Change the picture</button>
+    <img id="firstimage" src="./images/2f3ng0k80001000.jpg" style="width:100px">
+    <button onclick="document.getElementById('firstimage').src='./images/2f3ng0k80001000.jpg'">Change it back</button>
+    <br>
+    <br>
+    <script>
+      function myFunction() {
+      document.getElementById("paragraph").innerHTML = "This text changed";
+      }
+    </script>
+    <p id="paragraph" onclick="myFunction()">Random textRandom textRandom textRandom textRandom textRandom
+    <br>textRandom textRandom textRandom textRandom textRandom textRandom text</p>
+    <p id="hidden">This is amazing text</p>
+    <button onclick="hide()">Click this to make the text disappear.</button>
+    <button onclick="appear()">Click to make the text reappear</button>
+    <script>
+      function hide(){
+        document.getElementById("hidden").style.display="none"
+      }
+    </script>
+    <script>
+      function appear(){
+        document.getElementById("hidden").style.display="block"
+      }
+    </script>
+    <button onclick="document.body.style.backgroundColor = '#22E2C9';">Change the color</button>
+    <button onclick="document.body.style.backgroundColor = 'blue';">Change the color back</button>
+  </body>
+</html>
